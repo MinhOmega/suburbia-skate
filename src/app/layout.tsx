@@ -22,6 +22,7 @@ const dmMono = DM_Mono({
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
   const settings = await client.getSingle("settings");
+  console.log("🚀 ~ layout.tsx:25 ~ generateMetadata ~ settings:", settings)
 
   return {
     title: settings.data.site_title,

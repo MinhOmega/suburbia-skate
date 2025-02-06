@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Suburbia Skate - Interactive Skateboard Customizer
 
-## Getting Started
+A modern skateboard customization web application featuring an interactive 3D builder, team showcase, and dynamic content management through Prismic CMS.
 
-First, run the development server:
+![Suburbia Skate](./public/og-image.avif)
 
+## 🚀 Features
+
+- Interactive 3D skateboard customizer with real-time previews
+- Dynamic product catalog with customizable skateboards
+- Team member showcase with animated profiles
+- Responsive design optimized for all devices
+- Content management through Prismic CMS
+- Physics-based animations and interactions
+- SEO optimized with meta tags and structured data
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 with App Router
+- **3D Rendering:** Three.js with React Three Fiber
+- **CMS:** Prismic
+- **Styling:** TailwindCSS
+- **Animations:** GSAP
+- **Physics:** Matter.js
+- **Language:** TypeScript
+
+## 🏁 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/minhomega/suburbia-skate.git
+cd suburbia-skate
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Set up environment variables:
+```bash
+NEXT_PUBLIC_PRISMIC_ENVIRONMENT=your-prismic-repo-name
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 CMS Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Create a Prismic account and repository
+2. Configure the following Custom Types:
+   - Board Customizer
+   - Homepage
+   - Settings
+   - Skateboard
+   - Skater
 
-## Learn More
+## 🎮 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- Interactive 3D Skateboard Customizer
+- Team Grid with Animated Profiles
+- Product Grid with Dynamic Loading
+- Physics-based Footer Animation
+- Responsive Navigation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Run tests: `npm run test`
+- Run linting: `npm run lint`
+- Start Slice Machine: `npm run slicemachine`
 
-## Deploy on Vercel
+## 📦 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  ├── app/              # Next.js app router pages
+  ├── components/       # Reusable components
+  ├── slices/          # Prismic slice components
+  ├── prismicio.ts     # Prismic configuration
+  └── types/           # TypeScript type definitions
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+The project is optimized for deployment on Vercel. Follow these steps:
+
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Configure environment variables
+4. Deploy!
+
+## 📄 License
+
+This project is licensed under the GNU Affero General Public License v3.0 - see the LICENSE file for details.
